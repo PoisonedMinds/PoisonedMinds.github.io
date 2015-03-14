@@ -1,0 +1,128 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13-Mar-2015, 7:57:03 PM
+    Author     : Steven Biro
+*/
+
+.content {
+    background-color: whitesmoke;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+.navigation {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    padding-left:0px;
+    background-color: rgb(45,45,45);
+}            
+.nav-item {
+    width: 200px;
+}
+
+.nav-item a {
+    display: block;
+}
+
+.nav-item a:hover {
+
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label[for="nav-trigger"] {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url(images/icon.png);
+    background-size: contain;
+}
+.nav-trigger + label, .site-wrap {
+    transition: left 0.2s;
+}
+.nav-trigger:checked + label {
+    left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.site-wrap {
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    background-image: url("images/bg.png");
+    background-size: 100%;
+    padding: 10%;
+    min-height: 3000px;
+}
+
+p {
+    color: black;
+}
+.home {
+    background-image: url("images/home.png");
+    width: 200px;
+    height: 50px;
+}
+.home:hover {
+    background-image: url("images/home1.png");
+}
+.war {
+    width:200px;
+    height:50px;
+    background-image: url("images/war.png");
+}
+.war:hover {
+    background-image: url("images/war1.png");
+}
+.base {
+    width:200px;
+    height:50px;
+    background-image: url("images/base.png");
+}
+.base:hover {
+    background-image: url("images/base1.png");
+}
+.attacks {
+    width:200px;
+    height:50px;
+    background-image: url("images/attacks.png");
+}
+.attacks:hover {
+    background-image: url("images/attacks1.png");
+}
+.contact {
+    width:200px;
+    height:50px;
+    background-image: url("images/contact.png");
+}
+.contact:hover {
+    background-image: url("images/contact1.png");
+}
