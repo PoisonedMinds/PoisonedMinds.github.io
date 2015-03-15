@@ -129,12 +129,14 @@ p {
 
 .welcome {
 font-family:myFirstFont;
-font-size:25pt;
+font-size:3.5em;
+text-align: center;
 }
 .welcome:hover {
     
 }
 @font-face {
     font-family: myFirstFont;
-    src: url(http://poisonedminds.github.io/EmbossedBlackWide.ttf);
+    src: url(EmbossedBlackWide.ttf) format('truetype'),
+         url(EmbossedBlackWide.woff) format('woff');
 }
